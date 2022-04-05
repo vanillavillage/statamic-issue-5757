@@ -6,10 +6,8 @@ sections:
       -
         handle: title
         field:
-          type: text
+          type: hidden
           required: false
-          validate:
-            - required
       -
         handle: title_intro
         field:
