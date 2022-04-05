@@ -1,8 +1,13 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: 'Test Intro'
+template: home
+title_intro: Test
+title_main: Intro
+author: 3f1cb304-fded-4913-a53e-844a6135ee37
+updated_by: 3f1cb304-fded-4913-a53e-844a6135ee37
+updated_at: 1649192205
 ---
 ## Welcome to your new brand Statamic site!
 

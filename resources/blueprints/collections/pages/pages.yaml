@@ -1,0 +1,73 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: false
+          validate:
+            - required
+      -
+        handle: title_intro
+        field:
+          input_type: text
+          antlers: false
+          display: 'Title Intro'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 50
+      -
+        handle: title_main
+        field:
+          input_type: text
+          antlers: false
+          display: 'Title Main'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 50
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          localizable: true
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
